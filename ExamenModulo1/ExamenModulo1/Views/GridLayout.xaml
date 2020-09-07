@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ExamenModulo1.Views.GridLayout"
+             Title="Grid Exploration" 
+                Icon="icon.png"
+             >
+
+    <NavigationPage.TitleView>
+        <StackLayout Orientation="Horizontal">
+            <Image Source="icon.png" WidthRequest="35"/>
+            <Label Text="Grid Exploration" 
+                   VerticalOptions="Center"
+                   FontSize="20"
+                   TextColor="white"/>
+        </StackLayout>
+    </NavigationPage.TitleView>
+
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout BackgroundColor="#303030">
+           
+                <Grid >
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="AUTO"></RowDefinition>
+                        <RowDefinition Height="230.5"></RowDefinition>
+                        <RowDefinition Height="172.875"></RowDefinition>
+                        <RowDefinition Height="172.875"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <StackLayout Orientation="Horizontal"
+                         VerticalOptions="Start"
+                         HorizontalOptions="Start">
+                        <Label Text="First row hight: "
+                       TextColor="White"></Label>
+                        <Switch ></Switch>
+                    </StackLayout>
+                    <Grid Grid.Row="1">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                            <ColumnDefinition Width="100"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <StackLayout BackgroundColor="#00FFFF" 
+                                     HorizontalOptions="FillAndExpand"
+                                     VerticalOptions="FillAndExpand"
+                                    >
+                          
+                           
+                        </StackLayout>
+                        <StackLayout Grid.Column="1"
+                                        BackgroundColor="Black" 
+                                     HorizontalOptions="FillAndExpand"
+                                     VerticalOptions="FillAndExpand"
+                                    >
+
+
+                        </StackLayout>
+                    </Grid>
+                    <Grid Grid.Row="2">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                            <ColumnDefinition Width="100"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <StackLayout BackgroundColor="#808080" 
+                                     HorizontalOptions="FillAndExpand"
+                                     VerticalOptions="FillAndExpand"
+                                    >
+
+
+                        </StackLayout>
+                        <StackLayout Grid.Column="1"
+                                        BackgroundColor="#008000" 
+                                     HorizontalOptions="FillAndExpand"
+                                     VerticalOptions="FillAndExpand"
+                                    >
+
+
+                        </StackLayout>
+                    </Grid>
+                    <Grid Grid.Row="3">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                            <ColumnDefinition Width="100"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <StackLayout BackgroundColor="Yellow" 
+                                     HorizontalOptions="FillAndExpand"
+                                     VerticalOptions="FillAndExpand"
+                                    >
+
+
+                        </StackLayout>
+                        <StackLayout Grid.Column="1"
+                                        BackgroundColor="Purple" 
+                                     HorizontalOptions="FillAndExpand"
+                                     VerticalOptions="FillAndExpand"
+                                    >
+
+
+                        </StackLayout>
+                    </Grid>
+                </Grid>
+            </StackLayout>
+        </ScrollView>
+        
+    </ContentPage.Content>
+    
+</ContentPage>

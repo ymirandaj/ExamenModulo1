@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ExamenModulo1.MainPage"
+             Title="Grid Exploration"
+             >
+
+    <StackLayout >
+        <Label Text="Hola mundo"
+               FontSize="30"
+               FontAttributes="Bold"
+               FontFamily="AliasParaSerllamado"></Label>
+        <Button HorizontalOptions="FillAndExpand"
+                Text="Boton"
+                BackgroundColor="Blue"
+                TextColor="White"
+                Clicked="Button_Clicked"
+                ></Button>
+    </StackLayout>
+
+  
+</ContentPage>
